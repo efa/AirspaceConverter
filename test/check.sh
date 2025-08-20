@@ -9,7 +9,7 @@
 #
 # This script is part of AirspaceConverter project
 #============================================================================
-# 'check' sort Openair test files and compare. Depend on 'openairSort'
+# 'check' sort Openair test files and compare. Depend on 'openairSort.sh'
 
 fileIn=openair_airspace_ts.txt
 fileIn=openair_airspace_sixty.txt
@@ -32,12 +32,12 @@ perl -0777 -pe 's/\n(AL .*)\n(AH .*)\n/\n\2\n\1\n/g' t3.txt > t4.txt
 #unix2dos -q t4.txt
 cp t4.txt $fileOut
 rm t0.txt t1.txt t2.txt t3.txt t4.txt
-openairSort openair_airspace_check.txt openair_0.2.6_sorted.txt
+openairSort.sh openair_airspace_check.txt openair_0.2.6_sorted.txt
 
 cp ~/Documents/Flight/airspaces/openair_out/$comp .
 cat $comp | sed 's/^AC X$/AC G/g' > t0.txt
 mv t0.txt $comp
-openairSort $comp opentxt_php_sorted.txt
+openairSort.sh $comp opentxt_php_sorted.txt
 
 diff opentxt_php_sorted.txt openair_0.2.6_sorted.txt > diff.txt
 ne opentxt_php_sorted.txt openair_0.2.6_sorted.txt diff.txt

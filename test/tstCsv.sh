@@ -9,7 +9,7 @@
 #
 # This script is part of AirspaceConverter project
 #============================================================================
-# 'tstCsv' check the CSV in/out comparing to a reference generated with CUP2CSV bash script
+# 'tstCsv'.sh check the CSV in/out comparing to a reference generated with CUP2CSV bash script
 
 cd ..
 echo Compiling ...

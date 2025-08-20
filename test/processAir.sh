@@ -9,11 +9,11 @@
 #
 # This script is part of AirspaceConverter project
 #============================================================================
-# 'processAir' process some test input files in .aip format and generate Openair files
+# 'processAir.sh' process some test input files in .aip format and generate Openair files
 
 airspaceconverter -i openaip_airspace_ts.aip -o openair_airspace_ts.txt -p -s
 
-airspaceconverter -i openaip_airspace_sixty.aip -o openair_airspace_sixty.txt -p -s
+#airspaceconverter -i openaip_airspace_sixty.aip -o openair_airspace_sixty.txt -p -s
 
 airspaceconverter -i Amendola.aip -o Amendola.txt -p -s
 

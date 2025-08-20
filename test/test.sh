@@ -9,7 +9,7 @@
 #
 # This script is part of AirspaceConverter project
 #============================================================================
-# 'test' build, copy binaries and test Airspaces files in test dir, start GUI
+# 'test.sh' build, copy binaries and test Airspaces files in test dir, start GUI
 
 cd ..
 echo Compiling ...
@@ -22,7 +22,7 @@ echo Done
 echo Copying binaries ...
 cp Release/airspaceconverter test
 cp Release/libairspaceconverter.so test
-cp buildQt/airspaceconverter-gui test
+cp Release/airspaceconverter-gui test
 cd test
 echo Done
 echo Copying aip airspaces files ...

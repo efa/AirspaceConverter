@@ -9,7 +9,7 @@
 #
 # This script is part of AirspaceConverter project
 #============================================================================
-# 'openairSort' sort openair airspaces, keep duplicates, v1.00
+# 'openairSort.sh' sort openair airspaces, keep duplicates, v1.00
 
 fileIn1=$1
 fileOut=$2
